@@ -14,11 +14,11 @@ export class ProfileService {
 
   }
   getProfileInfo(){
-    return this.http.get("https://api.github.com/users/" + this.username + "?client_id=" + this.client_id + "&client_secret=" + this.client_secret)
+    return this.http.get("https://api.github.com/users/" + this.username )
     .map(res => res.json());
   }
  getProfileRepos(){
-  return this.http.get("https://api.github.com/users/" + this.username + "/repos?client_id=" + this.client_id + "&client_secret=" + this.client_secret)
+  return this.http.get("https://api.github.com/users/" + this.username + "/repos")
     .map(res => res.json());
  }
  updateProfile(username:string){

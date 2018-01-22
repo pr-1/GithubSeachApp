@@ -26,8 +26,10 @@
           </div>
           <div class="col-sm-5">
             <ul class="list-group">
-              <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
-              <li class="list-group-item" *ngIf="profile.email"><b>Email :</b>{{profile.email}}</li>
+              <li class="list-group-item" *ngIf="profile.bio">Bio :{{profile.bio}}</li>
+              <li class="list-group-item" *ngIf="profile.company">Company :{{profile.company}}</li>
+              <li class="list-group-item" *ngIf="profile.blog">Blog :<a href="{{profile.blog}}">{{profile.blog}}</a></li>
+              <li class="list-group-item" *ngIf="profile.email">Email :{{profile.email}}</li>
             </ul>
           </div>    
             <div class="col-sm-4">
